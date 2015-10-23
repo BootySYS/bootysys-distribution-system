@@ -19,4 +19,20 @@ public class Team {
     public int getSize() {
         return _members.size();
     }
+
+    public void addMember(Student student) {
+
+    }
+
+    public int getTeamId() {
+        return _teamId;
+    }
+
+    public int getCourseId() {
+        return _courseId;
+    }
+
+    public HashSet<Student> getMembers() {
+        return _members;
+    }
 }

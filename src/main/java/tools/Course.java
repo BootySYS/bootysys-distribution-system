@@ -41,4 +41,12 @@ public class Course {
         }
         return freeSpace;
     }
+
+    public HashSet<Team> getTeams() {
+        return _participants;
+    }
+
+    public void setMaxStudents(int newMax) {
+        _maxStudents = newMax;
+    }
 }
