@@ -1,0 +1,19 @@
+group 'pazzam-distribution-system'
+version '0.01-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'org.skyscreamer', name: 'jsonassert', version: '1.2.3'
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.7'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.7'
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-grizzly2-http', version: '2.7'
+}
