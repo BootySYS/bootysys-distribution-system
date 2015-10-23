@@ -14,7 +14,6 @@ public class DistributionAlgorithm {
         HashSet<Team> teams = conflictGraph.getTeams();
 
         HashSet<Course> coursesWithOneGroup = getCoursesWithOneGroup(courses);
-
         for (Course a : coursesWithOneGroup) {
             //TODO: write this
         }

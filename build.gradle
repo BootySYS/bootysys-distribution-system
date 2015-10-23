@@ -8,6 +8,9 @@ sourceCompatibility = 1.5
 
 repositories {
     mavenCentral()
+    flatDir {
+        dirs    'src/main/resources'
+    }
 }
 
 dependencies {
@@ -16,4 +19,6 @@ dependencies {
     compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.7'
     compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.7'
     compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-grizzly2-http', version: '2.7'
+    compile name: 'db4o-8.0.276.16149-all-java5'
 }
+
